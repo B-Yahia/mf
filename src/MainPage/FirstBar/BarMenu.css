@@ -1,0 +1,90 @@
+.barmenu{
+    background-color: #21C964;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 40px;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.menu-options{
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+
+}
+.menu-item {
+    margin: 10px 25px;
+    font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+}
+.logo{
+    padding-left: 22px;
+    width: 208px;
+    height: 40px;
+}
+.icons{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+.lg{
+    padding: 0px 10px;
+}
+.sign{
+    cursor: pointer;
+}
+.sign:focus + .si-container{
+    opacity: 1;
+    pointer-events: all;
+    background-color: #21C964;
+}
+
+/* 
+-------------------------------------------------------------------------------- */
+.si-container{
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    width: 230px;
+    background-color: white;
+    border-radius: 15px;
+    justify-content: space-around;
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    align-items: flex-start;
+    
+    pointer-events: none;
+}
+
+
+.login{
+    font-weight: 700;
+    padding: 0 10px;
+    
+}
+.rb-si{
+    border: none;
+    background-color: white;
+    padding: 0 10px;
+    justify-content: center;
+ 
+}
+.rb-si:focus{
+    outline: none;
+}
+.support{
+    border: none;
+    background-color: white;
+    justify-content: center;
+    padding: 0 10px;
+}
+.support:focus{
+    outline: none;
+}
+.line{
+    width: 100%;
+    border-bottom: 1px solid rgb(221, 221, 221);
+}

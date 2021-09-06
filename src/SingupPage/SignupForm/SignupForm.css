@@ -1,0 +1,117 @@
+.sf-container{
+    height: 650px;
+    width: 100%-160px;
+    margin: 20px 80px 100px;
+    background-color: #3186F5;
+    margin: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-radius: 20px;
+    padding: 0px;
+}
+.img-part{
+    margin-left: 100px;
+    padding: 0px;
+}
+.sf-img{
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    bottom: -4px;
+}
+
+.form-part{
+    height: 700px;
+    width: 510px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: absolute;
+    border-radius: 20px;
+    top: 45px;
+    right: 65px;
+    box-shadow: 0 0 10px;
+}
+.sf-title{
+    margin: 50px 55px;
+    font-family: Stolzl;
+    font-weight: 900;
+    font-size: 32px;
+}
+
+.sf-name{
+    margin : 20px 55px;
+    display: flex;
+    flex-direction: row;
+    width: 100%-110px;
+    justify-content: space-between;
+}
+
+.sf-f-name, .sf-l-name{
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 10px ;
+    width: 40%;
+}
+.sf-m-name{
+    margin : 20px 55px;
+    width: 100%-110px;
+    border: 1px solid grey;
+    padding: 10px;
+    border-radius: 10px ;
+}
+.sf-pw{
+    margin : 20px 55px;
+    display: flex;
+    flex-direction: row;
+    width: 100%-110px;
+    justify-content: space-between;
+}
+
+.sf-pw-1{
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 10px ;
+    width: 40%;
+}
+.sf-signup-btn{
+    height: 50px;
+    margin : 20px 55px;
+    width: 100%-110px;
+    padding: 10px;
+    border-radius: 10px ;
+    background-color: #3186F5;
+    color: white;
+}
+.sf-line{
+    margin : 0px 55px;
+    display: flex;
+    flex-direction: row;
+    width: 100%-110px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.sf-line-2, .sf-line-1{
+    border-top: 1px solid grey;
+    padding: 0px;
+    width: 30%;
+    margin: 0px;
+}
+.dp-btn{
+    background-color:  #26B55F;
+}
+.sf-l-text{
+    margin : 20px 55px;
+    display: flex;
+    flex-direction: row;
+    width: 100%-110px;
+    justify-content: flex-start;
+}
+.sf-l-text-1{
+    margin-right: 5px;
+}

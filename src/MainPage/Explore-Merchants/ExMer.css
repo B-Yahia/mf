@@ -1,0 +1,48 @@
+.ex-mer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 20px 80px;
+
+}
+.ex-mer-options{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    flex-wrap: wrap;
+    width: 100%;
+}
+.ex-mer-option{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    border-radius: 5px;
+    
+    width: 164px;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding:  10px;
+    transition: 1s;
+    font-family: Stolzl;
+    margin-right: 10px;
+    min-width: 100px;
+    margin: 5px 5px;
+}
+.ex-mer-option:hover {
+    background-color: #21C964;
+    color: white;   
+}
+
+
+.ex-mer-option-text{
+    width: 80%;
+    font-size: small;
+    margin: 0px;
+    font-weight: 600;
+
+}
+.ex-mer-option-img{
+    width: 15%;
+}
