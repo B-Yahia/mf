@@ -1,6 +1,7 @@
 .mv-body{
     display: flex;
     flex-direction: row;
+    
 }
 
 .mv-cards{
