@@ -1,0 +1,57 @@
+.mv-body{
+    display: flex;
+    flex-direction: row;
+}
+
+.mv-cards{
+    display: flex;
+    flex-direction: column;
+    margin: 70px;
+    width: 40%;
+}
+.mv-title{
+    font-size: 32px;
+    font-weight: 900;
+    font-family: Stolzl;
+    padding-bottom: 10px;
+    
+}
+.mv-card-img{
+    padding-right: 20px ;
+}
+.mv-research-result{
+    font-size: 16px;
+    font-family: Stolzl;
+    padding: 10px 0 30px;
+}
+.mv-cards-containers{
+    display: flex;
+    flex-direction: column;
+}
+.mv-card-containers{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+.mv-card-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
+.mv-card-info-title{
+    font-size: 20px;
+    font-weight: 900;
+    font-family: Stolzl;
+    padding-bottom: 20px;
+}
+.mv-card-info-cat{
+    margin: 10px 0;
+    font-size: 12px;
+    border: 1px solid grey;
+    padding: 2px 10px;
+    border-radius: 5px;
+}
