@@ -6,12 +6,12 @@ import SignupForm from "./SignupForm/SignupForm";
 function SignupPage (){
     return(
         <div>
-    
+            
             <BarMenu/>
             <SignupForm/>
             <RegisterBusiness/>
             <MainPageFooter />
-
+            
         </div>
     )
 }

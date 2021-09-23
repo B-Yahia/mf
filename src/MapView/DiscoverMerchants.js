@@ -1,6 +1,7 @@
 import "./DiscoverMerchants.css"
 import i5 from "./Image/card-image.png"
 import i6 from "./Image/map.png"
+import GoogleMap from "./GoogleMap"
 
 function DiscoverMerchants(){
     return(
@@ -45,10 +46,12 @@ function DiscoverMerchants(){
                             <div className="mv-card-info-text">Perfect for someone coming for an exchange placement contract etc to Helsinki. Ideal for couples as well.    </div>
                         </div>
                     </div>
-                    
                 </div>
             </div>
-            <div className="mv-map"> <img src={i6} className="mv-map-image"/> </div>
+            <div className="mv-map"> 
+            {/* <GoogleMap/>  */}
+            <img src={i6}/>
+            </div>
         </div>
     )
 }

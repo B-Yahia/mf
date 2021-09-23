@@ -1,10 +1,13 @@
 import logo from "../../Images/Logo-MF.svg";
 import lg from "../../Images/lg.svg"
-import sign from "../../Images/sign.svg"
+import sign1 from "../../Images/sign1.svg"
+import sign2 from "../../Images/sign2.svg"
 import "./BarMenu.css"
 import SignIn from "./Sign-In"
+import { useAuth } from "../../Context/AuthContext";
 
-function BarMenu (){
+function BarMenu (props){
+    const {modalLogin,handleLoginModal,currentUser,handleLogoutModal} = useAuth()
 return(
     <div className="barmenu">
         <img src={logo} className="logo" />    
@@ -16,7 +19,15 @@ return(
         </ul>
         <div className='icons'>
             <img src={lg} className="lg" />
-            <img src={sign} className='sign' />
+            <div className='sign'>
+                
+                <img src={sign1} className='sign-1' />
+                {currentUser?  
+                <p className="sign-1" onClick={handleLogoutModal}>Conected</p>:
+                <img src={sign2} className='sign-1' onClick={handleLoginModal} />}
+                
+            </div>
+            
             <SignIn/>
             
         </div>

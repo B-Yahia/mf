@@ -97,10 +97,14 @@
 
 }
 .sf-line-2, .sf-line-1{
-    border-top: 1px solid grey;
+    border-top: 1px solid rgb(182, 179, 179);
     padding: 0px;
-    width: 30%;
+    width: 45%;
     margin: 0px;
+}
+.sf-line-text{
+    color: rgb(182, 179, 179);
+    font-size: 12px;
 }
 .dp-btn{
     background-color:  #26B55F;
@@ -114,4 +118,7 @@
 }
 .sf-l-text-1{
     margin-right: 5px;
+}
+.error{
+    color: red;
 }

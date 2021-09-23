@@ -88,3 +88,15 @@
     width: 100%;
     border-bottom: 1px solid rgb(221, 221, 221);
 }
+.sign{
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 95px;
+    align-items: center;
+
+}
+.sign-1{
+    padding: 10px;
+}

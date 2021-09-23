@@ -1,0 +1,40 @@
+.Modal-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.modal-box{
+    width: 480px;
+    height: 550px;
+    box-shadow: 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: white;
+}
+.model-close{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.model-close-image{
+    margin: 10px;
+    cursor: pointer;
+}
+.model-title{
+    margin : 20px 55px;
+    font-family: stolzl;
+    font-size: 32px;
+    font-weight: 900;
+}
+.model-link{
+    margin : 0px 55px;
+    font-family: stolzl;
+    font-size: 16px;
+}
