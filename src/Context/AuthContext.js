@@ -1,14 +1,14 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { auth } from '../firebase';
+import { db } from '../firebase';
 
 const AuthContext = createContext();
 
 export const useAuth = () => useContext(AuthContext);
 
 export const AuthProvider = (props) => {
-  const [fname, setFname] = useState('');
-  const [lname, setLname] = useState('');
-  const [modalLogin, setModalLogin] = useState(true);
+  
+  const [modalLogin, setModalLogin] = useState(false);
   const [modalLogout, setModalLogout] = useState(false);
 
   const [currentUser, setCurrentUser] = useState({});
@@ -21,6 +21,22 @@ export const AuthProvider = (props) => {
 
   const signup = (email, password) => {
     return auth.createUserWithEmailAndPassword(email, password);
+  }
+
+  const pushUsersData = (email, password ,fname, lname) =>{
+    const user ={
+      firstname : fname,
+      lastname : lname,
+      useremail : email,
+      userPass : password
+    }
+    let dbRef = '';
+    try {
+      dbRef = db.ref("Users")   
+    } catch (error) {
+      console.error(error)
+    }
+    dbRef.set(user)
   }
 
   const login = (email, password) => {
@@ -46,6 +62,7 @@ export const AuthProvider = (props) => {
     handleLogoutModal,
     modalLogin,
     modalLogout,
+    pushUsersData,
   };
   return (
     <AuthContext.Provider value={value}>
